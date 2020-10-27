@@ -1,0 +1,55 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+    nav button {
+        display: none;
+    }
+
+
+/*----------- MAIN --------------*/
+
+main {
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+.main-story {
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 2;
+}
+.side-story {
+    margin: 5px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+/*----------- FOOTER --------------*/
+    

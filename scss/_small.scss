@@ -1,0 +1,119 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 20px;
+    color: rgb(255, 255, 255);
+}
+h1 {margin: 0; font-size: 3rem; font-family: 'Open Sans Condensed', sans-serif;}
+h2 {margin: 0; font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+header figure {
+    float: left;
+    margin: 0 1% 0 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $primaryColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav button {
+    background-color: darken($primaryColor, 10%);
+    height: 50px;
+    width: 50px;
+    color: #eee;
+    font-size: 26pt;
+    border: none;
+    padding: 0px 2px 4px 0px;
+}
+nav button:active {
+    background-color: lighten($primaryColor, 10%);
+}
+nav ul li a {
+    display: block;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+nav ul li.active a {
+    background-color: darken($primaryColor, 10%);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: lighten($primaryColor, 10%);
+}
+/*----------- MAIN --------------*/
+main {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 80rem;
+    display: grid;
+    padding: 10px;
+    padding-right: 20px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+img {
+    width: 100%;
+}
+.news {
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+}
+.news:hover {
+    background-color: rgb(230, 230, 230);
+}
+.main-story {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+}
+.side-story {
+    margin: 5px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    padding: .5rem 2%;
+    color: #fff;
+}
+.footer-container {
+    padding: 4% 10%;
+    line-height: 2pt;
+}
+.footer-content {
+    margin-bottom: 40px;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

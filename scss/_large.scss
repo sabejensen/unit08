@@ -1,0 +1,49 @@
+nav, main, footer, header {
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+.wrapper {
+        width: 100%;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+        width: 10%;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+        padding-right: 40px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-gap: 10px;
+        grid-template-rows: auto;
+    }
+.news {
+
+    }
+.main-story {
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 2;
+    }
+    .side-story {
+        margin: 5px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-gap: 10px;
+        grid-template-rows: auto;
+    }
+
+/*----------- FOOTER --------------*/
+    
